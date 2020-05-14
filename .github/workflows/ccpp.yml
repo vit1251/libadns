@@ -15,8 +15,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install Python 3
       run: sudo apt-get install -q -y python3 python3-pip
-    - name: Install Python invoke and meson
+    - name: Update Python setuptols module
+      run: sudo python3 -m pip install -U setuptools
+    - name: Install Python invoke module
       run: sudo python3 -m pip install -U invoke meson
+    - name: Install Python meson module
+      run: sudo python3 -m pip install -U meson
     - name: Setup Ninja
       run: sudo apt-get install -q -y ninja-build
     - name: Build
