@@ -1,48 +1,32 @@
-/*
- * acconfig.h
- * input file for autoheader/autoconf/configure: extra stuff for config.h
- */
-/*
- *  This file is part of adns, which is
- *    Copyright (C) 1997-2000,2003,2006,2014  Ian Jackson
- *    Copyright (C) 2014  Mark Wooding
- *    Copyright (C) 1999-2000,2003,2006  Tony Finch
- *    Copyright (C) 1991 Massachusetts Institute of Technology
- *  (See the file INSTALL for full details.)
- *  
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 3, or (at your option)
- *  any later version.
- *  
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *  
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software Foundation.
- */
+/* src/config.h.  Generated from config.h.in by configure.  */
+/* src/config.h.in.  Generated automatically from configure.in by autoheader 2.13.  */
 
 /* Define if inline functions a la GCC are available.  */
-#undef HAVE_INLINE
+#define HAVE_INLINE 1
 
 /* Define if function attributes a la GCC 2.5 and higher are available.  */
-#undef HAVE_GNUC25_ATTRIB
+#define HAVE_GNUC25_ATTRIB 1
 
 /* Define if constant functions a la GCC 2.5 and higher are available.  */
-#undef HAVE_GNUC25_CONST
+#define HAVE_GNUC25_CONST 1
 
 /* Define if nonreturning functions a la GCC 2.5 and higher are available.  */
-#undef HAVE_GNUC25_NORETURN
+#define HAVE_GNUC25_NORETURN 1
 
 /* Define if printf-format argument lists a la GCC are available.  */
-#undef HAVE_GNUC25_PRINTFFORMAT
+#define HAVE_GNUC25_PRINTFFORMAT 1
 
 /* Define if we want to include rpc/types.h.  Crap BSDs put INADDR_LOOPBACK there. */
-#undef HAVEUSE_RPCTYPES_H
+/* #undef HAVEUSE_RPCTYPES_H */
 
-@BOTTOM@
+/* Define if you have the poll function.  */
+#define HAVE_POLL 1
+
+/* Define if you have the nsl library (-lnsl).  */
+/* #undef HAVE_LIBNSL */
+
+/* Define if you have the socket library (-lsocket).  */
+/* #undef HAVE_LIBSOCKET */
 
 /* Use the definitions: */
 
